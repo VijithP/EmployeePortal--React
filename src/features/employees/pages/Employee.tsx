@@ -1,5 +1,5 @@
 import { useMemo, useState, type FormEvent } from 'react'
-import { Link } from 'react-router'
+// import { Link } from 'react-router'
 type Employee = {
   id: string
   name: string
@@ -62,6 +62,7 @@ function Employee() {
   }, [department, employees, query])
 
   function addEmployee(event: FormEvent<HTMLFormElement>) {
+    debugger;
     event.preventDefault()
     const nextId = `EMP-${String(employees.length + 1).padStart(3, '0')}`
     setEmployees((current) => [...current, { ...newEmployee, id: nextId, status: 'Active' }])
