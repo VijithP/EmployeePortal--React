@@ -34,7 +34,7 @@ function MainLayout() {
             <span>▦</span> Overview
           </NavLink>
 
-          <NavLink to="/employee" className="nav-item">
+          <NavLink to="/employeeInfo" className="nav-item">
             <span>👥</span> Employees
             <span className="nav-count">0</span>
           </NavLink>
